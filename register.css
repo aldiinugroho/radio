@@ -1,0 +1,135 @@
+select{
+    width: 26rem;
+    height: 2rem;
+    padding-left: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: rgb(29, 185, 84);
+}
+
+option{
+    font-weight: bold;
+}
+
+option:hover{
+    background-color: black;
+}
+
+input::placeholder{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(37, 37, 37);
+    font-weight: bold;
+}
+
+.padbox{
+    padding: 2rem;
+}
+
+.padbox>div{
+    padding: 1rem;
+}
+
+.padbox>div>input{
+    background-color: rgb(29, 185, 84);
+    border: none;
+    width: 25rem;
+    height: 2rem;
+    border-radius: 5px;
+    padding-left: 1rem;
+    font-weight: bold;
+}
+
+.padbox>div>input:focus{
+    outline: none;
+}
+
+select:focus{
+    outline: none;
+}
+
+.contentr{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 5%;
+}
+
+.contentkanan{
+    width: 25rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tregis{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 1rem;
+}
+
+.tregis>p{
+    color: rgb(29, 185, 84);
+    font-size: 3rem;
+}
+
+.tregis>label{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    padding-left: 0.5rem;
+}
+
+.tregis>button{
+    border: none;
+    cursor: pointer;
+    background-color: rgb(29, 185, 84);
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+    color: white;
+    width: 12rem;
+    height: 3rem;
+    outline: none;
+}
+
+.tregis>button:hover{
+    color: rgb(37, 37, 37);
+}
+
+.err{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 800px){
+    .padbox>div>input{
+        background-color: rgb(29, 185, 84);
+        border: none;
+        width: 15rem;
+        height: 2rem;
+        border-radius: 5px;
+        padding-left: 1rem;
+        font-weight: bold;
+    }
+
+    select{
+        width: 16rem;
+        height: 2rem;
+        padding-left: 0.5rem;
+        border: none;
+        border-radius: 5px;
+        font-weight: bold;
+        background-color: rgb(29, 185, 84);
+    }
+
+    .contentkanan{
+        width: 25rem;
+        padding: 0 2rem 5rem 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}

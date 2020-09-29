@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RX Player Register</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="register.css">
+    <link rel="icon" href="./Assets/icon310x310.png" type="icon">
+</head>
+<style>
+
+
+
+
+
+
+
+
+
+*{
+
+
+        padding: 0;
+        margin: 0;
+    }
+</style>
+<body id="bg">
+    <!-- header disini -->
+    <div id="header">
+        <a href="./index.html"><img class="rxresize" src="./Assets/Logo.png" alt="RX Player"></a>
+    </div>
+
+    <!-- navigation disini -->
+    <div class="navigation">
+        <button class="navdown" onclick="dropklik()"><hr></button>
+        <div class="navcontent" id="droponklik">
+            <a href="index.html"><b>Home</b></a>
+            <a href="#"><b>Register</b></a>
+            <a href="Premium.html"><b>Premium</b></a>
+            <a href="Top10.html"><b>Top 10 Asian Music</b></a>
+            <a href="Genre.html"><b>Music by Genre</b></a>
+            <a href="#"><hr></a>
+        </div>
+    </div>
+
+    <!-- content disini -->
+    <form action="Register.html" method="POST" id="form" onsubmit="return valid()">
+        <div class="contentr">
+            <!-- content kiri -->
+            <div class="padbox">
+                <div>
+                    <input type="text" id="fullname" placeholder="Full name">
+                </div>
+                <div>
+                    <input type="text" id="email" placeholder="Email">
+                </div>
+                <div>
+                    <input type="password" id="pass" placeholder="Password">
+                </div>
+                <div>
+                    <select name="gender" id="gender">
+                        <option value="" disabled selected>Gender</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                </div>
+                <div>
+                    <select name="payment" id="payment">
+                        <option value="" disabled selected>Payment Type</option>
+                        <option value="Go-Pay">Go-Pay</option>
+                        <option value="OVO">OVO</option>
+                        <option value="M-Banking">M-Banking</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- content kanan -->
+            <div class="contentkanan">
+                <div class="tregis">
+                    <p>Register</p>
+                </div>
+                <div class="tregis">
+                    <input type="checkbox" name="agree" id="agree" value="agree">
+                    <label for="agree">Agree to term and conditions.</label>
+                </div>
+                <div class="tregis">
+                    <button type="submit">Submit</button>
+                </div>
+                <div class="tregis">
+                    <div class="err" id="errors"></div>
+                </div>
+            </div>
+
+        </div>
+    </form>
+
+    <!-- footer disini -->
+    <div id="footer">
+        <div class="flex">
+            <div><a href="https://www.twitter.com/"><img class="imgrsz" src="./Assets/twitter.png" alt="twitter"></a></div>
+            <div><a href="https://www.facebook.com/"><img class="imgrsz" src="./Assets/facebook.png" alt="facebook"></a></div>
+            <div><a href="https://www.instagram.com/"><img class="imgrsz" src="./Assets/insta.png" alt="instagram"></a></div>
+        </div>
+    </div>
+    <script src="register.js"></script>
+    <script src="dropdown.js"></script>
+</body>
+</html>

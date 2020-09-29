@@ -1,0 +1,28 @@
+#pre{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#pre>div{
+    padding-top: 5%;
+}
+
+.preimgconf{
+    height: 20rem;
+}
+
+@media only screen and (max-width: 800px){
+    #pre{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-bottom: 12%;
+    }
+
+    .preimgconf{
+        height: 15rem;
+    }
+}
